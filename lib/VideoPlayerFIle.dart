@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
 class VideoPlayerFileCustum extends StatefulWidget {
-  VideoPlayerFileCustum({Key key, this.path}) : super(key: key);
-  final String path;
+  VideoPlayerFileCustum({Key key, this.videopath}) : super(key: key);
+  final String videopath;
 
   @override
   _VideoPlayerFileState createState() => _VideoPlayerFileState();
@@ -18,7 +18,7 @@ class _VideoPlayerFileState extends State<VideoPlayerFileCustum> {
   @override
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.file(File(widget.path));
+    _controller = VideoPlayerController.file(File(widget.videopath));
     _video = _controller.initialize();
   }
 
