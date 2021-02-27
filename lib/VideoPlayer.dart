@@ -14,7 +14,6 @@ class _VideoPlayerState extends State<VideoPlayerCustum> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _controller = VideoPlayerController.network(
         "https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4");
